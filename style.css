@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--Very-Light-Gray);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.card-container1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.heading1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  display: block;
+  color: var(--Very-Dark-Blue);
+}
+
+.heading2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Very-Dark-Blue);
+}
+
+.paragarph,
+.paragraph2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--Grayish-Blue);
+}
+
+.paragarph {
+  padding-inline: 1.3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  margin-bottom: 1.5rem;
+  padding-top: 2rem;
+  padding-inline: 1rem;
+  padding-bottom: 2rem;
+}
+
+.color-card1,
+.color-card2,
+.color-card3,
+.color-card4 {
+  border-radius: 10px;
+}
+
+.color-card1 {
+  border-top: 3px solid var(--Cyan);
+}
+
+.color-card2 {
+  border-top: 3px solid var(--Red);
+}
+
+.color-card3 {
+  border-top: 3px solid var(--Orange);
+}
+
+.color-card4 {
+  border-top: 3px solid var(--Blue);
+}
+
+.paragraph2 {
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 376px) {
+  .container {
+    max-width: 400px;
+  }
+} 
+
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1020px;
+  }
+
+  .card-container1 {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .color-card1 {
+    margin: auto 0;
+  }
+
+  /* .color-card2 {
+    grid-area: 1/2/2/3;
+  }
+
+  .color-card3 {
+    grid-area: 3/2/4/3;
+  } */
+
+  .color-card4 {
+    margin: auto 0;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .heading1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .paragarph {
+    padding-inline: 16rem;
+    font-size: 15px;
+  }
+}
